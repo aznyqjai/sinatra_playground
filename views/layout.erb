@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sinatra App </title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <% menu = ["home", "happy", "login", "anotherpage", "contact"] %>
+  <nav>
+    <%menu.each do |x| %>
+    <li> 
+      <a href = <%= x%>> <%= x%> </a>
+    </li>
+    <% end %>
+  </nav>
+  <h1>Home of Sinatra</h1>
+
+  <% if @current_user %>
+    <h2> Welcome <%= @current_user %> </h2>
+  <% end %>
+
+  <%= yield %>
+
+<!-- 
+  <form method="POST" action="/sign-in">   
+    <label for="username">Username</label>   
+    <input type="text" name="username">   
+    <label for="password">Password</label>   
+    <input type="password" name="password">   
+    <input type="submit"> 
+  </form>
+ -->
+
+</body>
+</html>

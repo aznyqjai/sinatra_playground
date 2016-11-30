@@ -1,0 +1,19 @@
+body{
+  background-color: white;
+  color:black;
+}
+
+li {
+  list-style-type: none;
+  display:inline-block;
+  margin:5px;
+  background-color: gray;
+  font-size: 2em;
+}
+a{
+  text-decoration:none;
+}
+
+span{
+  color: red;
+}
