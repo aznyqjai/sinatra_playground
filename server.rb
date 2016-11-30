@@ -46,6 +46,8 @@ end
 post '/contact_us' do
   puts "emailing"
   puts "your params are " + params.inspect
+  @message = 'Thank you for submitting, we will contact you soon!!'
+  erb :contact
 end
 
 
